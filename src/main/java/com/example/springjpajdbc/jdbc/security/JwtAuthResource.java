@@ -15,8 +15,6 @@ public class JwtAuthResource {
 	
 	private final AuthenticationService authenticationService;
 	
-	
-	
 	public JwtAuthResource(AuthenticationService authenticationService) {
 		super();
 		this.authenticationService = authenticationService;

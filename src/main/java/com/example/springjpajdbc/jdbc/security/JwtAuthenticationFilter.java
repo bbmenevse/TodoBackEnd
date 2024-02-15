@@ -24,15 +24,11 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 	
 	private final UserDetailsService userDetailsService;
 	
-	
-
 	public JwtAuthenticationFilter(JwtService jwtService, UserDetailsService userDetailsService) {
 		super();
 		this.jwtService = jwtService;
 		this.userDetailsService = userDetailsService;
 	}
-
-
 
 	@Override
 	protected void doFilterInternal
@@ -68,9 +64,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 		}
 		
 		filterChain.doFilter(request, response);
-		
-		
-		
 	}
 	
 	

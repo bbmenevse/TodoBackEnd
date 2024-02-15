@@ -34,14 +34,12 @@ public class AuthenticationService {
 		//I could add all the validations to a single method and then call it here
 		//Commenting out password validation so I can use easy passwords for tests.
 		//userService.validatePassword(request.getPassword());
-		
 		/*
 		System.out.println("The emailAdress is: " + request.getEmailAdress());
 		System.out.println("The password is: " + request.getPassword());
 		System.out.println("The the first name is: " + request.getFirstName());
 		System.out.println("The lastName is: " + request.getLastName());
 		*/
-		
 		var user = new UserBuilder().firstName(request.getFirstName()).lastName(request.getLastName()).emailAdress(request.getEmailAdress()).password(passwordEncoder.encode(request.getPassword())).build();
 		//System.out.println(" Inside the Register. User is: "+ user.toString());
 		userService.saveUser(user);
@@ -56,7 +54,6 @@ public class AuthenticationService {
 		var user = userService.findByEmailAdress(request.getEmailAdress());
 		var jwtToken= jwtService.generateToken(user);
 		return new AuthenticationResponse(jwtToken);
-		
 	}
 	
 	

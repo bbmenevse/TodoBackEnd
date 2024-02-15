@@ -23,7 +23,6 @@ public class TodoResource {
 	
 	private TodoService todoService;
 	
-	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 	
 	public TodoResource(TodoService todoService) {
 		super();
@@ -38,6 +37,9 @@ public class TodoResource {
 	@GetMapping("/api/{userName}/todos")
 	public List<Todo> retrieveTodos(@PathVariable String userName) throws Exception
 	{
+		// Self note: Don't forget that this doesn't get initialized at class level since authentication by user is not yet done when the bean is created!
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		
 		// On Postman, The authenticated user can enter a name other then their own and this method will respond back
 		// acording to the fake userAdress, So I call on Authentication to get the userAddress directly.
 	    String emailAdress= authentication.getName();
