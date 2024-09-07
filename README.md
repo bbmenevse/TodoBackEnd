@@ -3,7 +3,7 @@
 This is a simple project I have created to learn more about Rest API and how full stack applications work. This project is not meant to represent a finished, production-ready project. I intentionally left some loose ends (which I will point out in Overall) because this project is meant for learning, not production.  
 
 I haven't added some old classes that were created in the MVC way to the gitignore file because I don't want to compromise the visibility of the project as a whole. However, they are no longer reachable since I removed the default login page.
-This project is developed using Eclipse, and I use Docker for the MySQL image. For making API calls, I use Postman and a front end application using React.js (You can check it on my git called Todo Frontend.) The project has a very simple structure:
+This project is developed using Eclipse, and I use Docker for the MySQL image. For making API calls, I use Postman and a front end application using React.js (You can check it on my git repository called Todo Frontend.) The project has a very simple structure:
 
 
 - Todo Object
@@ -27,4 +27,4 @@ I created my own user class that implements UserDetails, and you can inspect its
 
 - I throw a lot of exceptions if a validation fails, but I did not return them to inform the user. I am not sure about the right approach here so I left it as it is, and front end application has a general "something went wrong" type of catch.    
 
-If you're interested in exploring a project that involves objects with relations, a more complex setup with Data objects and Thymeleaf, you can check out my 'Spring5-recipe-app' on my repository. Please note that it doesn't have a README for now. I will add one when the project is completed.
+If you're interested in exploring a project that involves objects with relations, a more complex setup with Data objects and Thymeleaf, you can check out my 'Spring5-recipe-app' on my repository. 

@@ -1,5 +1,4 @@
-
-
+/*
 insert into todo (ID, USERNAME, DESCRIPTION, TARGET_DATE, DONE)
 values(10001,'in28minutes', 'Get AWS Certified', CURRENT_DATE(), false);
 
@@ -20,3 +19,4 @@ values(10006,'default', 'Learn C#', CURRENT_DATE(), true);
 
 insert into todo (ID, USERNAME, DESCRIPTION, TARGET_DATE, DONE)
 values(10007,'default', 'Learn Python', CURRENT_DATE(), false);
+*/
