@@ -3,7 +3,7 @@
 This is a simple project I have created to learn more about Rest API and how full stack applications work. This project is not meant to represent a finished, production-ready project. I intentionally left some loose ends (which I will point out in Overall) because this project is meant for learning, not production.  
 
 I haven't added some old classes that were created in the MVC way to the gitignore file because I don't want to compromise the visibility of the project as a whole. However, they are no longer reachable since I removed the default login page.
-This project is developed using Eclipse, and I use Docker for the MySQL image. For making API calls, I use Postman and a front end application using React.js (You can check it on my git repository called Todo Frontend.) The project has a very simple structure:
+This project is developed using Eclipse, and I use Docker for the MySQL image. Postman was also used to make api calls to the server side. TodoBackEnd project also has a front end that was created with React.js (You can check it on my git repository called Todo Frontend.) TodoBackEnd project has a very simple structure:
 
 
 - Todo Object
